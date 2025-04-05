@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Order Form</title>
+    <link rel='stylesheet' href='order.css'/>
+  </head>
+  <body>
+    <h2 class="logo"><a href="index.html"><img src="Logo.png"img align="left" width="200" height="200" alt =
+      "bakery name with chef hat over it in circular icon"></a></h2>
+    <header class='speaker-form-header'>
+        <h1>Bakery Order Form</h1>
+        <p><em>Please Fill out this form to place your order.</em></p>
+    </header>
+    <form action='' method='get' class='speaker-form'>
+        <!--Text input filed-->
+        <div class='form-row'>
+            <label for='full-name'>Name</label>
+            <input id='full-name' name='full-name' type='text' placeholder='Full Name'/>
+        </div>
+ 
+        <!--Phone number input field-->
+        <div class='form-row'>
+            <label for='number'>Phone Number</label>
+            <input id='number' name='number' type='number' placeholder='xxx-xxx-xxxx'/>
+        </div>
+        
+         <!--Selection (drop-downs)-->
+         <div class='form-row'>
+          <label for='order'>Type of Order</label>
+          <select id='order' name='order'>
+              <option value='isp'>In-store Pickup</option>
+              <option value='del'>Delivery</option>
+          </select>
+      </div>
+
+         <!--Radio buttons - always wrapped in fieldset element-->
+         <fieldset class='legacy-form-row'>
+            <legend>Type of Bread</legend>
+                <input id='talk-type-1' name='talk-type' type='radio' value='main-stage' />
+                        <label for='talk-type-1' class='radio-label'>White</label>
+               
+                <input id='talk-type-2' name='talk-type' type='radio' value='workshop'  />
+                    <label for='talk-type-2' class='radio-label'>Whole Wheat</label>
+                   
+                <input id='talk-type-3' name='talk-type' type='radio' value='seminar' checked /> <!--checked by default-->
+                    <label for='talk-type-3' class='radio-label'>Multigrain</label>
+        </fieldset>
+
+        <fieldset class='legacy-form-row'>
+          <legend>Type of Cake</legend>
+              <input id='talk-type-1' name='talk-type' type='radio' value='main-stage'/>
+                      <label for='talk-type-1' class='radio-label'>Red Velvet</label>
+             
+              <input id='talk-type-2' name='talk-type' type='radio' value='workshop'  />
+                  <label for='talk-type-2' class='radio-label'>Carrot</label>
+                 
+              <input id='talk-type-3' name='talk-type' type='radio' value='seminar' /> 
+                  <label for='talk-type-3' class='radio-label'>Chocolate</label>
+      </fieldset>
+
+      <fieldset class='legacy-form-row'>
+        <legend>Type of Pastry</legend>
+            <input id='talk-type-1' name='talk-type' type='radio' value='main-stage' />
+                    <label for='talk-type-1' class='radio-label'>Cheese Croissant</label>
+           
+            <input id='talk-type-2' name='talk-type' type='radio' value='workshop'  />
+                <label for='talk-type-2' class='radio-label'>Currants Roll</label>
+               
+            <input id='talk-type-3' name='talk-type' type='radio' value='seminar' /> 
+                <label for='talk-type-3' class='radio-label'>Beef Pie</label>
+    </fieldset>
+
+    <fieldset class='legacy-form-row'>
+      <legend>Type of Cookie</legend>
+          <input id='talk-type-1' name='talk-type' type='radio' value='main-stage'/>
+                  <label for='talk-type-1' class='radio-label'>Chewy M&M</label>
+         
+          <input id='talk-type-2' name='talk-type' type='radio' value='workshop'  />
+              <label for='talk-type-2' class='radio-label'>Chocolate Chip</label>
+             
+          <input id='talk-type-3' name='talk-type' type='radio' value='seminar' /> 
+              <label for='talk-type-3' class='radio-label'>Oatmeal</label>
+  </fieldset>
+        
+         <!--Textareas-->
+         <div class='form-row'>
+            <label for='abstract'>Additional Details</label>
+            <textarea id='abstract' name='abstract'></textarea>
+            <div class='instructions'>Please include additional details about your order</div>
+        </div>
+ 
+         <!--Checkboxes do not need the fieldset element-->
+         <div class='form-row'>
+            <label class='checkbox-label' for='available'>
+                <input id='available' name='available' type='checkbox' value='is-available'/>
+                <span>Confirm Order</span>
+            </label>
+        </div>
+ 
+         <!--Buttons-->
+         <div class='form-row'>
+            <button>Submit </button></div>
+    
+        <div>
+           
+        </div>
+    </form>
+  </body>
+</html>

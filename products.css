@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+h2{
+    text-align: center;
+}
+
+.card-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:100px;
+}
+
+.card{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+    margin: 20px;
+}
+
+.card img{
+    width:100%;
+    height: 60%;
+}
+
+.card-content{
+    padding:10px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    color:#666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .btn{
+display:inline-block;
+padding:8px 16px;
+background-color: #ff8c1a;
+text-decoration: none;
+border-radius: 4px;
+margin-top: 16px;
+color:#fff;
+}
+
+.card-content .btn:hover{
+    color:black;
+    text-decoration:solid;
+}
+
+.main{
+    width:100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(bakery.avif);
+    background-position: center;
+    background-size: cover;
+    height: 149vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    
+}
+
+.icon{
+    width:200px;
+    float:left;
+    height: 80px;
+}
+
+.logo{
+    position: relative;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.menu{
+    weight:400px;
+    float:left;
+    height:70px;
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  /* dropdown menu style */
+  .dropdown{
+    display: none;
+  }
+  
+  ul li a:hover{
+    color:black;
+    text-decoration: none;
+    padding:10px 15px;
+}
+
+  .menu ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background: #ff8c1a;
+    z-index: 999;
+  }
+  .menu ul li:hover .dropdown ul {
+    display: block;
+    margin: 10px;
+  }
+
+  .menu ul li:hover .dropdown ul li {
+    width: 125px;
+    padding: 10px;
+  }
+
+ul{
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style:none;
+    position: relative;
+}
+
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius:5px;
+    display:block;
+    padding: 20px 25px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+ul li a:link{
+    color:#fff;
+}
+
+ul li a:hover{
+    color:black;
+    text-decoration: none;
+    padding:10px 15px;
+    background: #fff;
+}
+
+ul li a:visited{
+    color:rgba(0,0,0,0.5)50%;
+    text-decoration: none;
+}
+
+ul li a:active{
+    color:brown;
+}
+
+.video{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video iframe{
+    margin:0 auto;
+    width:700px;
+    height: 400px;
+
+}
+
+.content{
+    width:1000px;
+    height:auto;
+    margin: auto;
+    color:#fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left:20px;
+    padding-bottom:25px;
+    font-family:Georgia, 'Times New Roman', Times, serif, Times, serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    margin-bottom: 80px;
+    font-size: 25px;
+}
+
+.content h1{
+    font-family:Georgia, 'Times New Roman', Times, serif, Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 5%;
+    letter-spacing: 2px;
+}
+
+.content h2{
+    padding-left: 20px;
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff8c1a;
+    border: border-box;
+    border-color: #fff;
+    
+    margin-left: 20px;
+    font-size:18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease;
+    padding: 3px 10px;
+}
+
+.cn:hover{
+    background-color: #fff;
+    color:#ff8c1a;
+    text-decoration:underline;
+}
+
+.icons {
+    font-size: 80px;
+}
+
+.icons ion-icon{
+    color:#fff;
+    font-size: 35px;
+    padding-left: 14px;
+    padding-top: 5px;
+    position: relative;
+    bottom: 0;
+    margin-block: 7%;
+    margin-left: 3%;
+}
+
+.icons ion-icon:hover{
+    color:#ff8c1a;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px; 
+    background-color:#ff8c1a;
+}
+
+footer{
+    size: 20px;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 5;
+    padding: -180px 0;
+    }
+
+footer i{
+    font-size: 35px;
+    color:black;
+    margin-left:15px;
+}
+
+footer i:hover{
+    color:#ff8c1a
+}
+
+footer p{
+    text-align: center;
+}
